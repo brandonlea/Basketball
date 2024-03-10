@@ -13,3 +13,10 @@ function addScore(team, amount) {
     team2.textContent = score2;
   }
 }
+
+function reset() {
+  score1 = 0;
+  score2 = 0;
+  team1.textContent = score1;
+  team2.textContent = score2;
+}

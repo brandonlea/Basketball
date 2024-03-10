@@ -7,32 +7,38 @@
     <link rel="stylesheet" href="app.css" />
   </head>
   <body>
-    <div id="board">
-      <div class="team">
-        <div class="team-board">
-          <h1>HOME</h1>
+    <div class="container">
+      <div id="board">
+        <div class="team">
+          <div class="team-board">
+            <h1>HOME</h1>
+          </div>
+          <div>
+            <h1 id="team-1" class="team-score">0</h1>
+          </div>
+          <div class="buttons">
+            <button onclick="addScore(1, 1)" class="button">+1</button>
+            <buttonm onclick="addScore(1, 2)" class="button">+2</buttonm>
+            <button onclick="addScore(1, 3)" class="button">+3</button>
+          </div>
         </div>
-        <div>
-          <h1 id="team-1" class="team-score">0</h1>
-        </div>
-        <div class="buttons">
-          <button onclick="addScore(1, 1)" class="button">+1</button>
-          <buttonm onclick="addScore(1, 2)" class="button">+2</buttonm>
-          <button onclick="addScore(1, 3)" class="button">+3</button>
+        <div class="team">
+          <div class="team-board">
+            <h1>GUEST</h1>
+          </div>
+          <div>
+            <h1 id="team-2" class="team-score">0</h1>
+          </div>
+          <div class="buttons">
+            <button onclick="addScore(2, 1)" class="button">+1</button>
+            <buttonm onclick="addScore(2, 2)" class="button">+2</buttonm>
+            <button onclick="addScore(2, 3)" class="button">+3</button>
+          </div>
         </div>
       </div>
-      <div class="team">
-        <div class="team-board">
-          <h1>GUEST</h1>
-        </div>
-        <div>
-          <h1 id="team-2" class="team-score">0</h1>
-        </div>
-        <div class="buttons">
-          <button onclick="addScore(2, 1)" class="button">+1</button>
-          <buttonm onclick="addScore(2, 2)" class="button">+2</buttonm>
-          <button onclick="addScore(2, 3)" class="button">+3</button>
-        </div>
+
+      <div id="bottom">
+        <button onclick="reset()" class="button btn-long">NEW GAME</button>
       </div>
     </div>
 

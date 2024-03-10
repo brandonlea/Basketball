@@ -15,11 +15,18 @@ body {
   padding: 0 40px;
 }
 
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 #board {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
 .team-score {
@@ -45,4 +52,15 @@ body {
   color: #9aabd8;
   padding: 8px;
   margin: 0 5px;
+}
+
+.btn-long {
+  width: 200px;
+}
+
+#bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
